@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<MenuBar VBox.vgrow="NEVER" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.example.sistemaclinicadental.controlador.ComponentMenuPrincipalController">
+     <menus>
+        <Menu mnemonicParsing="false" text="Archivo">
+           <items>
+               <MenuItem mnemonicParsing="false" text="Menu Principal" onAction="#menuPrincipalClicked" />
+               <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" text="Cerrar sesion" onAction="#cerrarSesionClicked" />
+              <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" text="Cerrar aplicación" onAction="#cerrarAplicacionClicked" />
+           </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Citas">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Consultar citas agendadas" onAction="#consultarCitasAgendadasClicked" />
+              <MenuItem mnemonicParsing="false" text="Programar nueva cita" onAction="#nuevaCitaClicked" />
+              <MenuItem mnemonicParsing="false" text="Historial de citas" onAction="#consultarCitasAgendadasClicked" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Pacientes">
+           <items>
+              <MenuItem mnemonicParsing="false" text="Nuevo paciente" onAction="#nuevoPacienteClicked" />
+              <MenuItem mnemonicParsing="false" text="Consultar pacientes" onAction="#consultarPacientesClicked" />
+           </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Doctores">
+           <items>
+              <MenuItem mnemonicParsing="false" text="Nuevo doctor" onAction="#nuevoDoctorClicked" />
+              <MenuItem mnemonicParsing="false" text="Consultar doctores" onAction="#consultarDoctoresClicked" />
+           </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Usuarios del sistema">
+           <items>
+              <MenuItem mnemonicParsing="false" text="Nuevo usuario" onAction="#nuevoUsuarioClicked"  />
+              <MenuItem mnemonicParsing="false" text="Consultar usuarios" onAction="#consultarUsuariosClicked" />
+           </items>
+        </Menu>
+        <!--
+        <Menu mnemonicParsing="false" text="Ayuda">
+           <items>
+              <MenuItem mnemonicParsing="false" text="Acerca de" />
+           </items>
+        </Menu>
+        -->
+     </menus>
+  </MenuBar>

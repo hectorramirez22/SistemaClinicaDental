@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="dev.example.sistemaclinicadental.controlador.paciente.ConsultaPacientesController"
+      alignment="CENTER" spacing="10">
+    
+    <fx:include source="../component-menu-principal.fxml" />
+    
+    <Button text="Nuevo paciente" onAction="#nuevoPacienteClicked" />
+    
+    <Button text="Consultar pacientes" onAction="#consultarPacientesClicked" />
+    
+    <ProgressBar fx:id="progressBar" progress="0.0" visible="false"/>
+
+    <TableView fx:id="tableViewPacientes">
+        <columns>
+            <TableColumn text="ID" fx:id="columnId"/>
+            <TableColumn text="Nombre" fx:id="columnNombre"/>
+            <TableColumn text="Telefono" fx:id="columnTelefono"/>
+            <TableColumn text="Genero" fx:id="columnGenero"/>
+            <TableColumn text="Fecha de nacimiento" fx:id="columnEdad"/>
+            <TableColumn text="Nivel de compromiso" fx:id="columnNivelCompromiso"/>
+            <TableColumn text="Estado" fx:id="columnEstado"/>
+        </columns>
+    </TableView>
+
+</VBox>
